@@ -33,7 +33,7 @@ def workout_gen():
     return workout
 
 if __name__ == "__main__":
-    wokrout = workout_gen()
+    workout = workout_gen()
     print(workout)
 
 
