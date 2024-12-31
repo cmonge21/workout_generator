@@ -15,5 +15,7 @@ This project creates randomized workouts by selecting exercises from predefined 
 ```bash
 git clone https://github.com/cmonge21/workout_generator
 
+###
+
 ## Running via terminal
-'''python3 -m streamlit run streamlit_app.py'''
+python3 -m streamlit run streamlit_app.py
