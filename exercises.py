@@ -91,18 +91,139 @@ pull_exercise = [
     {
         "name": "dumbbell upright row",
         "equipment": ["dumbbells"]
+    }
+]
+
+
+ 
+
+squat_exercise = [
+    {
+        "name": "barbell back squat",
+        "equipment": ["barbell", "squat rack", "weight plates"]
     },
+    {
+        "name": "barbell front squat",
+        "equipment": ["barbell", "squat rack", "weight plates"]
+    },
+    {
+        "name": "goblet squat",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "jumping squat",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "barbell sumo squat",
+        "equipment": ["barbell", "squat rack", "weight plates"]
+    },
+    {
+        "name": "dumbbell sumo squat",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "barbell overhead squat",
+        "equipment": ["barbell", "squat rack", "weight plates"]
+    },
+    {
+        "name": "single leg squat",
+        "equipment": ["none"]
+    },
+    {
+        "name": "barbell box squat",
+        "equipment": ["barbell", "squat rack", "weight plates", "bench"]
+    },
+]
 
+lunge_exercise = [
+    {
+        "name": "barbell lunge",
+        "equipment": ["barbell", "squat rack", "weight plates"]
+    },
+    {
+        "name": "dumbbell forward lunge",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "dumbbell backward lunge",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "rear foot elevated split squat",
+        "equipment": ["dumbbells", "bench"]
+    },
+     {
+        "name": "front foot elevated split squat",
+        "equipment": ["dumbbells", "weight plates"]
+    },
+     {
+        "name": "side lunge",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "walking lunge",
+        "equipment": ["none"]
+    }
+]
 
- "bicep curl", "face pull", "pendlay row", "upright row"]
+carry_exercise = [
+    {
+        "name": "farmers carry",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "front rack carry",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "suitcase carry",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "goblet carry",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "zercher carry",
+        "equipment": ["barbell", "weight plates"]
+    }
+]
 
-squat_exercise = ["barbell back squat", "barbell front squat", "goblet squat", "jumping squat", "sumo squat", "overhead squat", "single leg squat", "box squat"]
-
-lunge_exercise = ["forward lunge", "backward lunge", "curtsy lunge", "dumbbell stepup", "rearfoot elevated split squat", "front foot elevated split squat", "side lunge", "walking lunge"]
-
-carry_exercise = ["farmers carry", "frontrack carry", "overhead carry", "suitcase carry", "goblet carry", "zercher carry"]
-
-hinge_exercise = ["conventional deadlift", "romanian deadlift", "sumo deadlift", "single leg romanian deadlift", "good morning", "hip thrust"]
+hinge_exercise = [
+    {
+        "name": "conventional deadlift",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "Romanian deadlift",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "barbell sumo deadlift",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "dumbbell sumo deadlift",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "single leg Romanian deadlift",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "good morning",
+        "equipment": ["barbell", "weight plates", "squat rack"]
+    },
+    {
+        "name": "barbell hip thrust",
+        "equipment": ["barbell", "weight plates", "bench"]
+    },
+    {
+        "name": "dumbbell hip thrust",
+        "equipment": ["dumbells", "bench"]
+    }
+]
 
 
 def workout_gen():
