@@ -1,8 +1,100 @@
 import random
 
-push_exercise = ["bench press", "incline bench press", "overhead press", "pushup", "dip", "tricep pushdown"," push press", "floor press", "skull crusher"]
+push_exercise = [
+    {
+        "name": "barbell bench press",
+        "equipment": ["barbell", "bench", "weight plates"]
+    },
+    {
+        "name": "dumbbell bench press",
+        "equipment": ["dumbbells, "bench"]
+    },
+    {
+        "name": "incline barbell bench press",
+        "equipment": ["barbell", "bench", "weight plates"]
+    },
+    {
+        "name": "dumbbell barbell bench press",
+        "equipment": ["dumbbells", "bench"]
+    },
+    {
+        "name": "overheaad barbell press",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "overhead dumbell press",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "pushup",
+        "equipment": ["none"]
+    },
+    {
+        "name": "tricep pushdown",
+        "equipment": ["cable machine"]
+    },
+    {
+        "name": "barbell push press",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "dumbbell push press",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "barbell floor press",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "dumbbell floor press",
+        "equipment": ["dumbbells"]
+    }
+]
 
-pull_exercise = ["seated row", "lat pulldown", "bentover row", "pull-up", "chin-up", "bicep curl", "face pull", "pendlay row", "upright row"]
+pull_exercise = [
+    {
+        "name": "seated row",
+        "equipment": ["cable machine"]
+    },
+    {
+        "name": "lat pulldown",
+        "equipment": ["cable machine"]
+    },
+    {
+        "name": "bentover barbell row",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "bentover dumbell row",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "pull-uo",
+        "equipment": ["none"]
+    },
+    {
+        "name": "chin-up",
+        "equipment": ["none"]
+    },
+    {
+        "name": "bicep curl",
+        "equipment": ["dumbbells"]
+    },
+    {
+        "name": "face pull",
+        "equipment": ["cable machine"]
+    },
+    {
+        "name": "barbell upright row",
+        "equipment": ["barbell", "weight plates"]
+    },
+    {
+        "name": "dumbbell upright row",
+        "equipment": ["dumbbells"]
+    },
+
+
+ "bicep curl", "face pull", "pendlay row", "upright row"]
 
 squat_exercise = ["barbell back squat", "barbell front squat", "goblet squat", "jumping squat", "sumo squat", "overhead squat", "single leg squat", "box squat"]
 
