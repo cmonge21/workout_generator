@@ -7,18 +7,14 @@ push_exercise = [
     },
     {
         "name": "dumbbell bench press",
-        "equipment": ["dumbbells, "bench"]
+        "equipment": ["dumbbells", "bench"]
     },
     {
         "name": "incline barbell bench press",
         "equipment": ["barbell", "bench", "weight plates"]
     },
     {
-        "name": "dumbbell barbell bench press",
-        "equipment": ["dumbbells", "bench"]
-    },
-    {
-        "name": "overheaad barbell press",
+        "name": "overhead barbell press",
         "equipment": ["barbell", "weight plates"]
     },
     {
@@ -65,11 +61,11 @@ pull_exercise = [
         "equipment": ["barbell", "weight plates"]
     },
     {
-        "name": "bentover dumbell row",
+        "name": "bentover dumbbell row",
         "equipment": ["dumbbells"]
     },
     {
-        "name": "pull-uo",
+        "name": "pull-up",
         "equipment": ["none"]
     },
     {
@@ -93,9 +89,6 @@ pull_exercise = [
         "equipment": ["dumbbells"]
     }
 ]
-
-
- 
 
 squat_exercise = [
     {
@@ -221,7 +214,7 @@ hinge_exercise = [
     },
     {
         "name": "dumbbell hip thrust",
-        "equipment": ["dumbells", "bench"]
+        "equipment": ["dumbbells", "bench"]
     }
 ]
 
@@ -235,12 +228,30 @@ def workout_gen():
     hinge = random.choice(hinge_exercise)
 	
     workout = {
-        "Push exercise": push,
-        "Pull exercise": pull,
-        "Squat exercise": squat,
-        "Lunge exercise": lunge,
-        "Carry exercise": carry,
-        "Hinge exercise": hinge
+        "Push exercise": {
+            "name": push["name"],
+            "equipment": push["equipment"]
+        },
+        "Pull exercise": {
+            "name": pull["name"],
+            "equipment": pull["equipment"]
+        },
+        "Squat exercise": {
+            "name": squat["name"],
+            "equipment": squat["equipment"]
+        },
+        "Lunge exercise": {
+            "name": lunge["name"],
+            "equipment": lunge["equipment"]
+        },
+        "Carry exercise": {
+            "name": carry["name"],
+            "equipment": carry["equipment"]
+        },
+        "Hinge exercise": {
+            "name": hinge["name"],
+            "equipment": hinge["equipment"]
+        }
     }
 
     return workout

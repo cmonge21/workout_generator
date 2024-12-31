@@ -1,13 +1,22 @@
 import streamlit as st
 from exercises import workout_gen
 
-# Title of the web app
-st.title("Workout Generator")
+import streamlit as st
+from exercises import workout_gen
 
-# Generate the workout as you previously did
+def display_workout(workout):
+    st.header("Today's Workout")
+    for exercise_type, exercise_info in workout.items():
+        st.subheader(exercise_type)
+        st.write(f"{exercise_info['name']}")
+        equipment_list = exercise_info['equipment']
+        if 'none' in equipment_list:
+            st.write("Equipment: Bodyweight only")
+        else:
+            st.write("Equipment:")
+            for item in equipment_list:
+                st.write(f"• {item}")
+        st.write("")
+
 workout = workout_gen()
-
-# Display the workout in the app
-st.header("Today's Workout")
-for exercise_type, exercise in workout.items():
-    st.write(f"{exercise_type}: {exercise}")
+display_workout(workout)
